@@ -1,0 +1,452 @@
+.poppins{
+    font-family: "Poppins", sans-serif;
+}
+.reenie{
+    font-family: "Reenie Beanie", cursive;
+}
+.py-90{
+    padding: 90px 0px;
+}
+.pt-90{
+    padding-top: 90px;
+}
+.pb-90{
+    padding-bottom: 90px;
+}
+.co-6E6E6E{
+    color: #6E6E6E;
+}
+.text-wh{
+    color: white;
+}
+.bg-color{
+    background-color: #F2F2F2;
+}
+.text-color{
+    color: #1BBC9B;
+}
+.fs-14{
+    font-size: 14px;
+}
+.fs-24{
+    font-size: 24px;
+}
+.m-100{
+    margin: 100px;
+}
+.scale-1_2{
+    transform: scale(1.2);
+}
+.bg-1bbc9b{
+    background-color: #1BBC9B;
+}
+.big-card-1 img,.preview-3-img img,.small-card-1,.destination,.about,.about-2,.about-3,.last-section,.footer-img,.frame-shop,.blog-2-big-img img,.blog-two-img img,.card-horizontal-img img,.preview-3-img img,.pre-6-img img,.typo-card img,.frame,.hero,.india-get,.archive-banner{
+    width: 100%;
+}
+.icon-1,.adventure,.india-get,.unforgettable,.archive-banner,.small-card-1,.about,.about-2,.about-3,.service-banner-section,.service-2-banner-section,.search-banner-section,.typo-banner-section{
+    background-size: cover;
+}
+/* dropdown-start */
+.travel-li:hover .dropdown , .pages-li:hover .dropdown , .shop-li:hover .dropdown , .blog-li:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+}
+.dropdown {
+    background-color: black;
+    top: 40px;
+    left: -50%;
+    border-radius: 10px;
+    width: 250px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s;
+}
+.dropdown-link a{
+    color: #ffffff;
+    transition: all 0.2s;
+}
+a:hover  {
+    color: #1BBC9B;
+}
+/* dropdown-end */
+/* header start */
+header{
+    padding: 8px 0px;
+}
+.g-btn{
+    background-color: #1BBC9B;
+    border: 2px solid #1BBC9B;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 5px;
+}
+.g-btn:hover{
+    background-color: transparent;
+    color: #1BBC9B;
+}
+.w100-g-btn{
+    padding: 12px 78px;
+}
+/* header end */
+.hero{
+    background-color: #F2F2F2;
+    background-image: url('../images/home-page-banner-bg.png');
+    background-position: center;
+    height: 850px;
+}
+.travle-s-5 img{
+    opacity: 0.3;
+    transition: all 0.5s;
+}
+.travle-s-5 img:hover{
+    opacity: 1;
+}
+.icon-1{
+    background-image: url('../images/home-tour.png');
+    height: 130px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-2{
+    background-image: url('../images/home-bike.png');
+}
+.icon-3{
+    background-image: url('../images/home-skyscraper.png');
+}
+.adventure{
+    background-repeat: no-repeat;
+    background-image: url('../images/home-bg-2.png');
+}
+.india-get{ 
+    aspect-ratio: 2/1;
+    background-image: url('../images/home-travel-1.png');
+}
+.unforgettable{
+    background-image: url('../images/testimonial-image.png');
+}
+.archive-banner{
+    background-image: url('../images/archive-banner.jpg');
+    height: 500px;
+}
+.bolg-img{
+    background-image: url('../images/blog-banner.png');
+}
+.prices-banner{
+    background-image: url('../images/prices-banner.png');
+}
+.contact-us{
+    background-image: url('../images/contact-banner.jpg');
+}
+/* card css start */
+.card-bg-white{
+    background-color: #ffffff;
+}
+.big-card-1-image{
+    overflow: hidden;
+    height: 100px;
+}
+.big-card-1-image img, .preview-3-img img{
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    transition: all 0.3s;
+}
+.big-card-1-image:hover img, .frame-shop:hover img, .card:hover img , .preview-3-img:hover img ,.about-img-section:hover img{
+    scale: 1.05;
+}
+.big-card-1{
+    border-radius: 10px;
+}
+.big-card-1-image{
+    height: 200px;
+}
+.big-card-buttons{
+    border: 2px solid #1BBC9B;
+    background-color: #1BBC9B;
+}
+.big-card-buttons , .blue-buttons , .purple-buttons , .red-btn , .orange-btn ,.yellow-btn ,.gry-btn{
+    transition: all 0.3s ;
+}
+.blue-buttons{
+    border: 2px solid #14B9D5;
+    background-color: #14B9D5;
+}
+.blue-buttons:hover{
+    background-color: transparent;
+    color: #14B9D5 !important;
+}
+.purple-buttons{
+    border: 2px solid #BA71DA;
+    background-color: #BA71DA;
+}
+.purple-buttons:hover{
+    background-color: transparent;
+    color: #BA71DA !important;
+}
+.big-card-buttons:hover{
+    background-color: transparent;
+    color: #1BBC9B;
+}
+.red-btn{
+    background-color: #F76570;
+    border: 2px solid #F76570;
+    color: #fff;
+}
+.red-btn:hover{
+    background-color: transparent;
+    color: #F76570;
+}
+.orange-btn{
+    background-color: #F3A46B;
+    border: 2px solid #F3A46B;
+    color: #fff;
+}
+.orange-btn:hover{
+    background-color: transparent;
+    color: #F3A46B;
+}
+.yellow-btn{
+    background-color: #FFD205;
+    border: 2px solid #FFD205;
+    color: #fff;
+}
+.yellow-btn:hover{
+    background-color: transparent;
+    color: #FFD205;
+}
+.gry-btn{
+    background-color: #434A54;
+    border: 2px solid #434A54;
+    color: #fff;
+}
+.gry-btn:hover{
+    background-color: transparent;
+    color: #434A54;
+}
+.small-card-1{
+    border-radius: 10px;
+    background-image: url('../images/small-card-1.png');
+    background-position: center;
+    height: 400px;
+}
+.small-card-2{
+    background-image: url('../images/small-card-2.png');
+}
+.small-card-3{
+    background-image: url('../images/small-card-3.png');
+}.small-card-4{
+    background-image: url('../images/small-card-4.png');
+}
+/* card css end */
+.destination{
+    background-image: url('../images/Destination-hero.png');
+    height: 500px;
+}
+.icon-bg{
+    background-color: #14B9D5;
+    height: 50px;
+    width:50px;
+    border-radius: 50%;
+}
+.about{
+    height: 500px;
+    background-image: url('../images/aboutus-hero.png');
+}
+.about-2{
+    aspect-ratio: 2/1;
+    background-image: url('../images/about-img-2.png');
+}
+.about-3{
+    height: fit-content;
+    background-image: url('../images/about-img-3.png');
+}
+.about-4{
+    background: url('../images/about-img-11.png') no-repeat center center/cover;
+}
+.service-banner-section{
+    background: url('../images/servise-1.jpg') no-repeat center center/cover;
+    height: 500px;
+    background-position: center;
+}
+.service-2-banner-section{
+    background: url('../images/servise-12.png') no-repeat center center/cover;
+    height: 692px;
+    background-position: center;
+}
+.last-section{
+    background-image: url('../images/servise-14.png');
+    height: 150px;
+    background-repeat: no-repeat;
+    background-color:rgba(0, 0, 0,0.7);
+}
+/* footer strat */
+.footer-img{ 
+    height: 474px;
+    background-image: url('../images/footer-img.png');
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+/* footer end */
+/* shop_page */
+.frame-shop{
+    overflow: hidden;
+}
+.about-img-section{
+    overflow: hidden;
+    border-radius: 16px;
+}  
+.frame-shop img ,.about-img-section img{
+    transition: all 0.5s;
+}
+/* contact-us-page start */
+.form-control{
+    background-color: transparent;
+}
+.contact{
+    transform: translateY(20%);
+}
+/* contact-us-page end */
+/* blog hero */
+.blog-2-hero {
+    background-color: #F2F2F2;
+}
+.blog-2-icon-frame{
+    background-color: #1BBC9B;
+    width: 42px;
+    height: 42px;
+}
+/* blog */
+.blog-2-big-img img {
+    border-radius: 10px;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+.blog-2-article-1{
+    transform: translateY(-10%);
+}
+/* testimonial */
+.blog-2-testimonial{
+    border-radius: 10px;
+    background-color: #F2F2F2;
+}
+.blog-2-img-frame{
+    width: 50px;
+    height: 50px;
+}
+.blog-two-img{
+    border-radius: 10px;
+    height: 400px;
+}
+.blog-two-img img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+/* card */
+.big-card-buttons{
+    border: 2px solid #1BBC9B;
+    color: #ffffff;
+    background-color: #1BBC9B;
+   transition: all 0.3s ;
+}
+.big-card-buttons:hover{
+    background-color: transparent;
+    color: #1BBC9B;
+}
+/* blog-2 start */
+/* horizontal card */
+.card-horizontal-img img {
+    object-fit: cover;
+    height: 100%;
+}
+.card-horizontal{
+    overflow: hidden;
+    border-radius: 10px;
+}
+.preview-3-img   {
+    border-radius: 10px;
+}
+.preview-3-img img  {  
+    object-fit: cover;
+} 
+.prev-3-time{
+    background-color: #F2F2F2;
+    border-radius: 10px;   
+}
+.pre-2-border-start{
+    border-left: 2px solid #d3d0d0;
+}
+/* preview 6 */
+.pre-6-img{
+    border-radius: 10px;
+    height: 158px;
+}
+.pre-6-img img{
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+/* preview-end */
+/* search-page start */
+.search-banner-section{
+    background: url('../images/search-hero.png') no-repeat center center/cover;
+    height: 500px;
+    background-position: center;
+}
+/* search-page end */
+/* Typologies-page start */
+.typo-banner-section{
+    background: url('../images/typo-banner.jpg') no-repeat center center/cover;
+    height: 500px;
+    background-position: center;
+}
+.typo-card {
+    border-radius: 16px;
+}
+.typo-card img {
+    height: 100%;
+}
+.typo-card:hover .overlay-typo {
+    background-color: rgb(0, 0, 0 , 0.3);
+}
+.typo-card:hover p , .small-card-1:hover p{
+    opacity: 1;
+    display: block;
+    transform: translateY(-5px);
+}
+.typo-card p , .small-card-1 p{
+        opacity: 0;
+        transition: all 0.5s;
+        transform: translateY(5px);
+}
+.overlay-typo{
+    border-radius: 12px;
+    height: 100%;
+    background-color: rgb(0, 0, 0 , 0);
+    transition: all 0.3s;
+    transform: translateY(-100%);
+}
+/* Typologies-page end */
+.search-results a {
+    display: block;
+    padding: 8px;
+    border-bottom: 1px solid #e9ecef;
+    text-decoration: none;
+    color: #333;
+}
+.search-results a:hover {
+  background-color: #f8f9fa;
+}
+.search-results {
+  max-height: 200px;
+  overflow-y: auto;
+}
+.frame{
+    height: 100%;
+    object-fit: cover;
+}
+.carousel-control-next{
+    width: 5%;
+}

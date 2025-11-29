@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single</title>
+    <!-- favi icon -->
+    <link rel="icon" href="../images/favi.png">
+    <!-- font-icons -->
+    <link rel="stylesheet" href="../css/all.min.css">
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" />
+    <!-- font-family: "Poppins", sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <!-- font-family: "Reenie Beanie", cursive; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet" />
+    <!-- style-css -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+   <!-- Modal -->
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="searchModalLabel">Search Pages</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <input type="text" id="searchInput" class="form-control mb-3" placeholder="Type a page name..." />
+          <div class="search-results" id="results">
+            <a href="../index.html">Home</a>
+            <a href="./aboutus.html">About</a>
+            <a href="./archive.html">Archive</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./blog2.html">Blog-2</a>
+            <a href="./contact-us.html">Contact</a>
+            <a href="./destination.html">Destination</a>
+            <a href="./preview.html">Preview</a>
+            <a href="./prices.html">Prices</a>
+            <a href="./search.html">Search</a>
+            <a href="./services.html">Services</a>
+            <a href="./shop.html">Shop</a>
+            <a href="./single-page.html">Single-page</a>
+            <a href="./typologies.html">Typologies</a>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Offcanvas -->
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel" style="height: 250px;">
+        <div class="offcanvas-header">
+          <div class="col-lg-2 col-4">
+              <img src="../images/logo.png" class="img-fluid" alt="" width="75%" />
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="list-unstyled">
+              <li>
+                  <a href="../index.html" class="text-decoration-none text-black">Home</a>
+              </li>
+             <li>
+                  <a class="text-decoration-none text-black" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                     Travel <i class="fa-solid fa-angle-right" style="color: #1BBC9B;"></i>
+                  </a>
+                  <div class="collapse ms-4" id="collapseExample2">
+                      <ul class="list-unstyled">
+                              <li class="mb-1"><a href="./destination.html" class="text-decoration-none" style="color: #1BBC9B;">Designation</a></li>
+                              <li class="mb-1"><a href="./typologies.html" class="text-decoration-none" style="color: #1BBC9B;">Typologies</a></li>     
+                      </ul>
+                  </div>
+              </li>
+              <li>
+                  <a class="text-decoration-none text-black" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                     Pages <i class="fa-solid fa-angle-right" style="color: #1BBC9B;"></i>
+                  </a>
+                  <div class="collapse ms-4" id="collapseExample3">
+                    <ul class="list-unstyled">
+                      <li class="mb-1"><a href="./aboutus.html" class="text-decoration-none" style="color: #1BBC9B;">About</a></li>
+                      <li class="mb-1"><a href="./preview.html" class="text-decoration-none" style="color: #1BBC9B;">Preview</a></li>
+                      <li class="mb-1"><a href="./prices.html" class="text-decoration-none" style="color: #1BBC9B;">Prices</a></li>
+                      <li class="mb-1"><a href="./services.html" class="text-decoration-none" style="color: #1BBC9B;">Services</a></li>
+                      <li class="mb-1"><a href="./contact-us.html" class="text-decoration-none" style="color: #1BBC9B;">Contact</a></li>
+                      <li class="mb-1"><a href="./search.html" class="text-decoration-none" style="color: #1BBC9B;">Search</a></li>
+                    </ul>
+                  </div>
+              </li>          
+              <li>
+                  <a class="text-decoration-none text-black" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                     Shop <i class="fa-solid fa-angle-right" style="color: #1BBC9B;"></i>
+                  </a>
+                  <div class="collapse ms-4" id="collapseExample4">
+                    <ul class="list-unstyled">
+                      <li class="mb-1"><a href="./shop.html" class="text-decoration-none" style="color: #1BBC9B;">Shop</a></li>
+                      <li class="mb-1"><a href="./prices.html" class="text-decoration-none" style="color: #1BBC9B;">Price</a></li>
+                    </ul>
+                </div>
+              </li>
+              <li>
+                  <a class="text-decoration-none text-black" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                     Blog <i class="fa-solid fa-angle-right" style="color: #1BBC9B;"></i>
+                  </a>
+                  <div class="collapse ms-4" id="collapseExample5">
+                      <ul class="list-unstyled">
+                              <li class="mb-1"><a href="./blog.html" class="text-decoration-none" style="color: #1BBC9B;">Blog Page</a></li>
+                              <li class="mb-1"><a href="./blog2.html" class="text-decoration-none" style="color: #1BBC9B;">Blog 2</a></li>
+                              <li class="mb-1"><a href="./archive.html" class="text-decoration-none" style="color: #1BBC9B;">Archive</a></li>
+                              <li class="mb-1"><a href="./single-page.html" class="text-decoration-none" style="color: #1BBC9B;">Single Page</a></li>
+                      </ul>
+                  </div>
+              </li>
+              <li>
+                  <a href="./contact-us.html" class="text-decoration-none text-black">Contact Us</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Offcanvas-2 -->
+    <div class="offcanvas offcanvas-start bg-color" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <div class="col-lg-6">
+          <img src="../images/logo.png" class="img-fluid" alt="" width="75%" />
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <h6 class="poppins text-color fw-bold">"Wanderlust: A never-ending journey to discover the world, one passport stamp at a time. 🌍✈️" </h6>
+        <ul>
+          <li>
+            <p class="fw-bold">"Traveling isn't just about visiting new places; it's about discovering parts of yourself you never knew existed. Each new destination brings a fresh perspective, a new adventure, and countless memories. The world is vast, and with every journey, I feel like I’m piecing together the most beautiful puzzle of life. Whether it's a hidden beach or a bustling city, there’s something magical about stepping out of your comfort zone and embracing the unknown."</p>
+          </li>
+          <li>
+            <p class="fw-bold">"There's a special kind of freedom that comes with traveling. It's the feeling of waking up in a new place, not knowing exactly what's ahead, but knowing that adventure is waiting. Traveling opens your eyes to new cultures, new people, and new ways of life. It's about taking risks, making memories, and leaving your heart in places you never imagined. Every trip, big or small, is a chapter in my book of life, and I can't wait to see what the next page holds."</p>
+          </li>
+        </ul>
+        <h6 class="poppins text-color fw-bold">"Collecting memories, not things. 🌎📸"</h6>
+        <ul>
+          <li>
+            <p class="fw-bold">"The beauty of travel is in the unexpected moments—the ones you didn’t plan for, but that become the most memorable. Whether it’s sharing a laugh with a stranger in a remote village or witnessing a sunrise from a mountaintop, it’s the experiences that shape you and remind you how big the world is and how small we are. Every journey reminds me that life is about the people you meet, the places you see, and the stories you get to tell."</p>
+          </li>
+          <li>
+            <p class="fw-bold">"Traveling is a never-ending love affair with the world. Each place I visit leaves a piece of my heart behind, and every new destination fills me with wonder. It's the thrill of seeing something new, the peace of slowing down to appreciate the simple beauty around me, and the excitement of discovering hidden gems. From the bustling streets of a city to the quiet solitude of nature, travel is my reminder that life is about living fully, embracing the unknown, and finding joy in every moment."</p>
+          </li>
+        </ul>
+        <h6 class="poppins text-color fw-bold">"The world is too big to stay in one place. 🌏" </h6>
+        <h6 class="poppins text-color fw-bold">"Finding beauty in every corner of the world. ✨"</h6>
+        <h6 class="poppins text-color fw-bold">"Life is short, and the world is wide. Let’s explore it all. 🌍"</h6>
+        <h6 class="poppins text-color fw-bold">"Passport in hand, wanderlust in my heart. 💼🌍"</h6><br><br><br>
+      </div>
+    </div>
+      <!-- header start -->
+      <header class="bg-color position-relative z-1">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 d-flex align-items-center poppins">
+              <div class="col-lg-2 col-4">
+                <img src="../images/logo.png" class="img-fluid" alt="" width="75%" />
+              </div>
+              <nav class="col-lg-8 d-none d-lg-flex ">
+                <ul class="list-unstyled d-flex m-0 justify-content-evenly w-100">
+                  <li>
+                    <a href="../index.html" class="text-decoration-none text-black">Home</a>
+                  </li>
+                  <li class="position-relative travel-li"> 
+                    <a href="#" class="text-decoration-none text-black">Travel <i class="fa-solid fa-angle-down" style="color: #1bbc9b"></i></a>
+                    <div class="dropdown position-absolute poppins p-3">
+                      <ul class="dropdown-items list-unstyled">
+                        <li class="dropdown-link mb-3">
+                            <a class="text-decoration-none " href="./destination.html"> Destination</a>  
+                        </li>
+                        <li class="dropdown-link ">
+                          <a class="text-decoration-none" href="./typologies.html">Typologies</a>  
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="position-relative pages-li">
+                    <a href="#" class="text-decoration-none text-black">Pages
+                      <i class="fa-solid fa-angle-down" style="color: #1bbc9b"></i>
+                    </a>
+                    <div class="dropdown position-absolute  poppins p-3">
+                      <ul class="dropdown-items list-unstyled">
+                        <li class="dropdown-link mb-3">
+                            <a class="text-decoration-none " href="./archive.html">Archive</a>  
+                        </li>
+                        <li class="dropdown-link mb-3 ">
+                          <a class="text-decoration-none" href="./preview.html">Preview</a>  
+                        </li>
+                        <li class="dropdown-link mb-3 ">
+                          <a class="text-decoration-none" href="./aboutus.html">About</a>  
+                        </li>
+                        <li class="dropdown-link mb-3 ">
+                          <a class="text-decoration-none" href="./prices.html">Prices</a>  
+                        </li>
+                        <li class="dropdown-link mb-3 ">
+                          <a class="text-decoration-none" href="./services.html">Services
+                          </a>  
+                        </li>
+                        <li class="dropdown-link mb-3 ">
+                          <a class="text-decoration-none" href="./search.html">Search</a>  
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="position-relative shop-li">
+                    <a href="./shop.html" class="text-decoration-none text-black">Shop
+                      <i class="fa-solid fa-angle-down" style="color: #1bbc9b"></i>
+                    </a>
+                    <div class="dropdown position-absolute  poppins p-3">
+                      <ul class="dropdown-items list-unstyled">
+                        <li class="dropdown-link mb-3">
+                            <a class="text-decoration-none " href="./shop.html">Shop Page </a>  
+                        </li>
+                        <li class="dropdown-link ">
+                          <a class="text-decoration-none" href="./prices.html">Prices</a>  
+                        </li>
+                        
+                      </ul>
+                    </div>
+    
+                  </li>
+                  <li class="position-relative blog-li">
+                    <a href="./blog.html" class="text-decoration-none text-black blog-li">Blog
+                      <i class="fa-solid fa-angle-down" style="color: #1bbc9b"></i>
+                    </a>
+                    <div class="dropdown position-absolute  poppins p-3">
+                      <ul class="dropdown-items list-unstyled">
+                        <li class="dropdown-link mb-3">
+                            <a class="text-decoration-none " href="./blog.html">Blog page</a>  
+                        </li>
+                        <li class="dropdown-link mb-3 ">
+                          <a class="text-decoration-none" href="./blog2.html">Blog-2</a>  
+                        </li>
+                        <li class="dropdown-link mb-3">
+                          <a class="text-decoration-none" href="./single-page.html">Single</a>  
+                        </li>
+                        <li class="dropdown-link  ">
+                          <a class="text-decoration-none" href="./archive.html">Archive</a>  
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="./contact-us.html" class="text-decoration-none text-black">Contact Us</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="col-lg-2 col-8 d-flex justify-content-end align-items-center">
+                <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" class="d-lg-none d-md-block"><i class="fa-solid fa-bars fa-lg" style="color: #000000"></i></a>
+              <a  href="#offcanvasExample" data-bs-toggle="offcanvas" role="button" aria-controls="offcanvasExample" class="d-none d-lg-block"><i class="fa-solid fa-bars fa-lg" style="color: #000000"></i></a>
+                <a href="#" class="g-btn text-decoration-none ms-2" data-bs-toggle="modal" data-bs-target="#searchModal">Search</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- header end -->  
+    <main>
+        <section class="bg-color">
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="carouselExampleInterval" class="carousel slide p-0" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="1000">
+                                <div class="d-flex col-12">
+                                    <div class=" col-lg-4 col-12">
+                                        <img src="../images/single-1.jpeg.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class=" col-lg-4 col-12">
+                                        <img src="../images/single-2.jpeg.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class=" col-lg-4 col-12">
+                                        <img src="../images/single-3.jpeg.png" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex col-12">
+                                    <div class=" col-lg-4 col-12">
+                                        <img src="../images/single-1.jpeg.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class=" col-lg-4 col-12">
+                                        <img src="../images/single-2.jpeg.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class=" col-lg-4 col-12">
+                                        <img src="../images/single-3.jpeg.png" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-flex col-12">
+                                    <div class=" col-lg-4 col-12">
+                                        <img src="../images/single-1.jpeg.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class=" col-lg-4 col-12">
+                                        <img src="../images/single-2.jpeg.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class=" col-lg-4 col-12">
+                                        <img src="../images/single-3.jpeg.png" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+
+        <section class="bg-color">
+            <div class="container" style="height: 200px;">
+                <div class="row ">
+                    <div class="d-flex justify-content-center mt-3">
+                        <div class="col-lg-5 col-12 text-center ">
+                            <p class="h2 poppins">Chiang Mai</p>
+                            <p style="color: #6E6E6E; font-size: 16px;"><i class="fa-solid fa-location-dot"></i>
+                                &nbsp;Thailand</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3 ">
+                        <div class="col-lg-7 col-12 col-12 d-flex justify-content-center">
+                            <div class="col-2 fs-1 text-end px-3 text-success"><i class="fa-solid fa-clock" style="color: #1BBC9B;"></i></div>
+                            <div class="col-2">
+                                <p>Duration <br> <span style="font-size: 20px;" class="fw-bold">1 Week</span></p>
+                            </div>
+                            <div class="col-2 fs-1 text-end px-3 text-success"><i class="fa-solid fa-road" style="color: #1BBC9B;"></i></div>
+                            <div class="col-2">
+                                <p>Difficulty <br> <span style="font-size: 20px;" class="fw-bold">Easy</span></p>
+                            </div>
+                            <div class="col-2 fs-1 text-end px-3 text-success"><i class="fa-solid fa-person" style="color: #1BBC9B;"></i></div>
+                            <div class="col-2">
+                                <p>Min age <br> <span style="font-size: 20px;" class="fw-bold">0</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <section class="py-90 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-12 ">
+                        <p class="fw-bold" style="font-size: 25px;">Enjoy the Adventure</p>
+                        <p>
+                            Are you looking for an adventure of a lifetime? Join us on an unforgettable journey through
+                            some of the
+                            world's most stunning landscapes and cultural destinations. Our expertly curated tours take
+                            you to
+                            incredible destinations, from the rugged mountains of Patagonia to the vibrant cities of
+                            Asia. Our
+                            itineraries are designed to immerse you in the local culture, with opportunities to meet
+                            locals, try new
+                            foods, and learn about the history and traditions of each destination. Our experienced
+                            guides will lead
+                            you through each destination, sharing their knowledge and passion for travel. We offer a
+                            range of
+                            activities to suit every traveler, from hiking and kayaking to cultural tours and culinary
+                            experiences.
+                        </p>
+
+                        <p>
+                            Our accommodations are carefully selected for comfort and convenience, with options to suit
+                            every
+                            budget. Whether you prefer luxurious hotels or cozy homestays, we have something for
+                            everyone. At
+                            every step of the journey, we prioritize sustainability and responsible tourism. We work
+                            with local
+                            communities to ensure that our tours have a positive impact on the environment and the
+                            people we
+                            meet along the way. Join us on a journey of discovery and exploration, and discover the
+                            world's most
+                            incredible destinations with us.
+                        </p>
+                        <hr class="mt-5 mb-5">
+                        <p class="fw-bold" style="font-size: 25px;">Included / Excluded</p>
+                        <p>To help you plan your trip, we have put together a list of what's included and what's not
+                            included in your
+                            tour package. This will give you a clear understanding of what to expect and help you make
+                            any
+                            necessary arrangements before your journey begins.</p>
+                        <div class="col-12 d-flex">
+                            <div class="col-lg-6 col-12 ">
+                                <div class="col-12 d-flex">
+                                    <div class="col-1 text-success ">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <div class="col-11">
+                                        <p>Train tickets and Bus transportation</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex">
+                                    <div class="col-1 text-success">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <div class="col-11">
+                                        <p>Breakfast, lunch, and dinner.</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex">
+                                    <div class="col-1 text-success">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <div class="col-11">
+                                        <p>Accommodation at hotel</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex">
+                                    <div class="col-1 text-success">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <div class="col-11">
+                                        <p>Train tickets and Bus transportation</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12 ">
+                                <div class="col-12 d-flex">
+                                    <div class="col-1 text-success">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <div class="col-11">
+                                        <p>Professional tour guide</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex">
+                                    <div class="col-1 text-success">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <div class="col-11">
+                                        <p>Transfers between destinations</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex">
+                                    <div class="col-1">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </div>
+                                    <div class="col-11">
+                                        <p>Entrance fees to museums</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex">
+                                    <div class="col-1">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </div>
+                                    <div class="col-11">
+                                        <p>Custom itinerary</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <hr class="mt-5 mb-5">
+
+                        </div>
+                        <hr class="mt-5 mb-5">
+                        <p class="fw-bold" style="font-size: 25px;">Tour Map</p>
+                        <p>This comprehensive map is designed to guide you through an exciting journey filled with
+                            remarkable
+                            destinations and captivating experiences.</p>
+                        <div>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d71685.94373607541!2d98.91527760988448!3d18.794322638317656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da3a7e90bb6f5d%3A0x98d46270a59b4367!2sChiang%20Mai%2C%20Mueang%20Chiang%20Mai%20District%2C%20Chiang%20Mai%2C%20Thailand!5e1!3m2!1sen!2sin!4v1744208560689!5m2!1sen!2sin"
+                                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade" class="border rounded"></iframe>
+                        </div>
+                        <hr class="mt-5 mb-5">
+                        <p class="fw-bold" style="font-size: 25px;">Itinerary</p>
+                        <p class="poppins">We have carefully planned out each day to give you the best possible
+                            experience. From
+                            exploring historic
+                            landmarks to tasting delicious local cuisine, each day is packed with adventure and
+                            excitement. Join us
+                            as we take you on a journey through some of the most fascinating destinations in the world.
+                        </p>
+                        <div>
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed fw-bold poppins" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                            aria-expanded="false" aria-controls="flush-collapseOne">
+                                            <span class="text-success">DAY 1</span>&nbsp; - Arrival and Orientation
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Placeholder content for this accordion, which is
+                                            intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                            first item's accordion body.</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed fw-bold poppins" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                            aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            <span class="text-success">DAY 2</span> &nbsp; - City Tour
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Placeholder content for this accordion, which is
+                                            intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                            second item's accordion body. Let's imagine this being filled with some
+                                            actual content.</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed fw-bold poppins" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                            aria-expanded="false" aria-controls="flush-collapseThree">
+                                            <span class="text-success">DAY 3</span> &nbsp; - Cooking Class
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Placeholder content for this accordion, which is
+                                            intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                            third item's accordion body. Nothing more exciting happening here in terms
+                                            of content, but just filling up the space to make it look, at least at first
+                                            glance, a bit more representative of how this would look in a real-world
+                                            application.</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed fw-bold poppins" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                            aria-expanded="false" aria-controls="flush-collapseThree">
+                                            <span class="text-success">DAY 4</span>&nbsp; - Nature Hike
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseFour" class="accordion-collapse collapse"  data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Placeholder content for this accordion, which is
+                                            intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                            third item's accordion body. Nothing more exciting happening here in terms
+                                            of content, but just filling up the space to make it look, at least at first
+                                            glance, a bit more representative of how this would look in a real-world
+                                            application.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed fw-bold poppins" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseFive"
+                                            aria-expanded="false" aria-controls="flush-collapseThree">
+                                            <span class="text-success">DAY 5</span>&nbsp; - Free Day
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Placeholder content for this accordion, which is
+                                            intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                            third item's accordion body. Nothing more exciting happening here in terms
+                                            of content, but just filling up the space to make it look, at least at first
+                                            glance, a bit more representative of how this would look in a real-world
+                                            application.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="mt-5 mb-5">
+                        <p class="fw-bold poppins" style="font-size: 25px;">Gallery</p>
+                        <p class="poppins">Each image tells a unique story, inviting us into a world of emotion, beauty,
+                            and complexity. Get ready to
+                            be moved, inspired, and challenged as we journey through this captivating collection of
+                            images.
+                        </p>
+                        <div class="col-12 d-flex flex-wrap  justify-content-between row-gap-2 ">
+                            <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center  px-1">
+                                <img class="img-fluid" src="../images/single-4.jpg" alt="img" class="border rounded ">
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center  px-1">
+                                <img class="img-fluid" src="../images/single-5.png" alt="img" class="border rounded">
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center  px-1">
+                                <img class="img-fluid" src="../images/single-6.png" alt="img" class="border rounded">
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center  px-1">
+                                <img class="img-fluid" src="../images/single-7.png" alt="img" class="border rounded ">
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center  px-1">
+                                <img class="img-fluid" src="../images/single-8.png" alt="img" class="border rounded">
+                            </div>
+                            <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center  px-1">
+                                <img class="img-fluid" src="../images/single-9.png" alt="" class="border rounded">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-lg-4 col-12 mt-2 position-relative ">
+                        <div style="box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px; top: 20px;"
+                            class="col-12 border rounded px-4 py-4 poppins position-sticky">
+                            <p>Price</p>
+                            <div class="d-flex justify-content-between">
+                                <span class="poppins fw-bold " style="font-size: 20px;">From</span>
+                                <span class="poppins fw-bold" style="font-size: 35px;"><span class="poppins fw-bold"
+                                        style="font-size: 25px;">$</span>490</span>
+                            </div>
+                            <hr class="mt-3 mb-3">
+                            <div class="col-12 d-flex ">
+                                <div class="col-6 text-center">
+                                    <p class="text-success border-end border-2 border-secondary">Booking Form</p>
+                                </div>
+                                <div class="col-6 text-center">
+                                    <p>Enquiry Form</p>
+                                </div>
+                            </div>
+                            <hr class="mt-1 mb-3">
+                            <div>
+                                <p class="poppins fw-bold">Date</p>
+                                <p class="text-secondary">03-13-2024</p>
+                            </div>
+                            <hr class="mt-1 mb-3">
+                            <div>
+                                <p class="fw-bold">Adults</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span class="poppins">Over 18 ( $ 490 )</span> <span><span><i
+                                            class="fa-solid fa-minus"></i></span> &nbsp;<span style="font-size: 25px;"
+                                        class="fw-bold poppins">1</span> &nbsp; <span><i
+                                            class="fa-solid fa-plus"></i></span></span>
+                            </div>
+                            <hr class="mt-1 mb-3">
+                            <div>
+                                <p class="fw-bold">Children</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span class="poppins">Under 18 ( $ 200 )</span> <span><span><i
+                                            class="fa-solid fa-minus"></i></span> &nbsp;<span style="font-size: 25px;"
+                                        class="fw-bold poppins">0</span> &nbsp; <span><i
+                                            class="fa-solid fa-plus"></i></span></span>
+                            </div>
+                            <hr class="mt-1 mb-3">
+                            <p class="fw-bold">Extra Services <br>
+                                <span class="fw-semibold text-secondary" style="font-size: 14px;">Add extra services on
+                                    your reservation</span>
+                            </p>
+                            <div class="form-check">
+                                <input class="form-check-input text-secondary border" type="checkbox" value=""
+                                    id="checkDefault">
+                                <label class="form-check-label" for="checkDefault" style="font-size: 14px;">
+                                    Health Insurance ( $ 220 )
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input text-secondary border" type="checkbox" value=""
+                                    id="checkDefault">
+                                <label class="form-check-label" for="checkDefault" style="font-size: 14px;">
+                                    Medical Insurance ( $ 45 )
+                                </label>
+                            </div>
+                            <div class="col-12 mt-3">
+                                <button type="button" class="g-btn col-12">BOOK NOW FOR $ 490</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="col-12 text-center mt-4 text-success" style="font-size: 30px; font-family:  Reenie Beanie, cursive;">Check All</div>
+        <section class="mt-5 mb-5">
+            <div class="container">
+                <div class="row">
+                    <p class="text-center fw-bold poppins" style="font-size: 50px;">Packages</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-12">
+                        <div class="px-md-3 mt-2">
+                            <div class=" big-card-1 overflow-hidden card-bg-white shadow ">
+                                <div class="big-card-1-image ">
+                                    <img src="../images/single-10.png" alt="img">
+                                </div>
+                                <div class="p-3">
+                                    <p class="poppins fw-bold mt-4" style="font-size: 20px;">Athenes</p>
+                                    <div class="d-flex align-items-center border-bottom border-2 pb-3 mb-4">
+                                        <i class="fa-solid fa-location-dot" style="color: #BA71DA;"></i>
+                                        <p class="m-0 ms-2 text-secondary">Greece</p>
+                                    </div>
+                                    <p class="text-secondary poppins border-bottom border-2 pb-3 mb-4">
+                                        Immerse yourself in the history and culture
+                                        of this ancient city as you explore the
+                                        stunning Acropolis.
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-end mb-4">
+                                        <div class="col-6">
+                                            <button
+                                                class="big-card-buttons rounded fw-bold px-4 py-2 poppins">Details</button>
+                                        </div>
+                                        <div class="col-5 text-end">
+                                            <p class="poppins text-secondary m-0">From</p>
+                                            <p class="fw-bold fs-4 poppins m-0">$ 677
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="px-md-3 mt-2">
+                            <div class=" big-card-1 overflow-hidden card-bg-white shadow ">
+                                <div class="big-card-1-image ">
+                                    <img src="../images/single-11.png" alt="img">
+                                </div>
+                                <div class="p-3">
+                                    <p class="poppins fw-bold mt-4" style="font-size: 20px;">Athenes</p>
+                                    <div class="d-flex align-items-center border-bottom border-2 pb-3 mb-4">
+                                        <i class="fa-solid fa-location-dot" style="color: #14B9D5;"></i>
+                                        <p class="m-0 ms-2 text-secondary">Azure Coast</p>
+                                    </div>
+                                    <p class="text-secondary poppins border-bottom border-2 pb-3 mb-4">
+                                        Escape to the azure coast and discover a
+                                        world of breathtaking beauty and
+                                        tranquility of coastline.
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-end mb-4">
+                                        <div class="col-6">
+                                            <button
+                                                class="blue-buttons text-wh rounded fw-bold px-4 py-2 poppins">Details</button>
+                                        </div>
+                                        <div class="col-5 text-end">
+                                            <p class="poppins text-secondary m-0">From</p>
+                                            <p class="fw-bold fs-4 poppins m-0">$ 400
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="px-md-3 mt-2">
+                            <div class=" big-card-1 overflow-hidden card-bg-white shadow ">
+                                <div class="big-card-1-image ">
+                                    <img src="../images/single-12.png" alt="img">
+                                </div>
+                                <div class="p-3">
+                                    <p class="poppins fw-bold mt-4" style="font-size: 20px;">Bangkok</p>
+                                    <div class="d-flex align-items-center border-bottom border-2 pb-3 mb-4">
+                                        <i class="fa-solid fa-location-dot" style="color: #BA71DA;"></i>
+                                        <p class="m-0 ms-2 text-secondary">Thailand</p>
+                                    </div>
+                                    <p class="text-secondary poppins border-bottom border-2 pb-3 mb-4">
+                                        Immerse yourself in the history and culture
+                                        of this ancient city as you explore the
+                                        stunning Acropolis.
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-end mb-4">
+                                        <div class="col-6">
+                                            <button
+                                                class="purple-buttons text-wh rounded fw-bold px-4 py-2 poppins">Details</button>
+                                        </div>
+                                        <div class="col-5 text-end">
+                                            <p class="poppins text-secondary m-0">From</p>
+                                            <p class="fw-bold fs-4 poppins m-0">$ 1000
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer start -->
+    <footer class="footer-img overlay d-flex align-items-center py-90">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 d-flex flex-wrap">
+                    <div class="col-lg-6 col-12 ">
+                        <h2 class="h1 fw-bold text-white">
+                            Travel beyond your <br />
+                            imagination, with our <br />
+                            Travel Agency!
+                        </h2>
+                    </div>
+                    <div class="col-lg-6 d-flex col-12 mt-lg-0 mt-5">
+                        <div class="col-6">
+                            <h5 class="text-white">Address</h5>
+                            <ul class="list-unstyled">
+                                <li class="text-decoration-none text-white fw-lighter">
+                                    1080 Brickell Ave
+                                </li>
+                                <li class="text-decoration-none text-white fw-lighter mt-2">
+                                    Miami - Florida
+                                </li>
+                                <li class="text-decoration-none text-white fw-lighter mt-2">
+                                    U.S. of America
+                                </li>
+                                <ul class="list-unstyled d-flex mt-2">
+                                    <li class="text-decoration-none">
+                                        <i class="fa-brands fa-facebook" style="color: #ffffff"></i>
+                                    </li>
+                                    <li class="text-decoration-none ms-2">
+                                        <i class="fa-brands fa-twitter" style="color: #ffffff"></i>
+                                    </li>
+                                    <li class="text-decoration-none ms-2">
+                                        <i class="fa-brands fa-youtube" style="color: #ffffff"></i>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <h5 class="text-white pb-3">Contact</h5>
+                            <a href="#" class="g-btn text-decoration-none text-white">info@travel.com</a>
+                            <h5 class="text-white mt-4">+ 01 483 593 284</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <!-- js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const results = document.getElementById('results');
+    
+        searchInput.addEventListener('input', function () {
+          const filter = this.value.toLowerCase();
+          const links = results.querySelectorAll('a');
+    
+          links.forEach(link => {
+            const text = link.textContent.toLowerCase();
+            link.style.display = text.includes(filter) ? 'block' : 'none';
+          });
+        });
+     </script>
+</body>

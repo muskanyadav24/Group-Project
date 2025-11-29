@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <!-- favi icon -->
+    <link rel="icon" href="../images/favi.png">
+    <!-- font-icons -->
+    <link rel="stylesheet" href="../css/all.min.css">
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" />
+    <!-- font-family: "Poppins", sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <!-- font-family: "Reenie Beanie", cursive; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+   <!-- Modal -->
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="searchModalLabel">Search Pages</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <input type="text" id="searchInput" class="form-control mb-3" placeholder="Type a page name..." />
+          <div class="search-results" id="results">
+            <a href="../index.html">Home</a>
+            <a href="./aboutus.html">About</a>
+            <a href="./archive.html">Archive</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./blog2.html">Blog-2</a>
+            <a href="./contact-us.html">Contact</a>
+            <a href="./destination.html">Destination</a>
+            <a href="./preview.html">Preview</a>
+            <a href="./prices.html">Prices</a>
+            <a href="./search.html">Search</a>
+            <a href="./services.html">Services</a>
+            <a href="./shop.html">Shop</a>
+            <a href="./single-page.html">Single-page</a>
+            <a href="./typologies.html">Typologies</a>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Offcanvas -->
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel" style="height: 250px;">
+      <div class="offcanvas-header">
+        <div class="col-lg-2 col-4">
+            <img src="../images/logo.png" class="img-fluid" alt="" width="75%" />
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="list-unstyled">
+            <li>
+                <a href="../index.html" class="text-decoration-none text-black">Home</a>
+            </li>
+           <li>
+                <a class="text-decoration-none text-black" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                   Travel <i class="fa-solid fa-angle-right" style="color: #1BBC9B;"></i>
+                </a>
+                <div class="collapse ms-4" id="collapseExample2">
+                    <ul class="list-unstyled">
+                            <li class="mb-1"><a href="./destination.html" class="text-decoration-none" style="color: #1BBC9B;">Designation</a></li>
+                            <li class="mb-1"><a href="./typologies.html" class="text-decoration-none" style="color: #1BBC9B;">Typologies</a></li>     
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a class="text-decoration-none text-black" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                   Pages <i class="fa-solid fa-angle-right" style="color: #1BBC9B;"></i>
+                </a>
+                <div class="collapse ms-4" id="collapseExample3">
+                  <ul class="list-unstyled">
+                    <li class="mb-1"><a href="./aboutus.html" class="text-decoration-none" style="color: #1BBC9B;">About</a></li>
+                    <li class="mb-1"><a href="./preview.html" class="text-decoration-none" style="color: #1BBC9B;">Preview</a></li>
+                    <li class="mb-1"><a href="./prices.html" class="text-decoration-none" style="color: #1BBC9B;">Prices</a></li>
+                    <li class="mb-1"><a href="./services.html" class="text-decoration-none" style="color: #1BBC9B;">Services</a></li>
+                    <li class="mb-1"><a href="./contact-us.html" class="text-decoration-none" style="color: #1BBC9B;">Contact</a></li>
+                    <li class="mb-1"><a href="./search.html" class="text-decoration-none" style="color: #1BBC9B;">Search</a></li>
+                  </ul>
+                </div>
+            </li>          
+            <li>
+                <a class="text-decoration-none text-black" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                   Shop <i class="fa-solid fa-angle-right" style="color: #1BBC9B;"></i>
+                </a>
+                <div class="collapse ms-4" id="collapseExample4">
+                  <ul class="list-unstyled">
+                    <li class="mb-1"><a href="./shop.html" class="text-decoration-none" style="color: #1BBC9B;">Shop</a></li>
+                    <li class="mb-1"><a href="./prices.html" class="text-decoration-none" style="color: #1BBC9B;">Price</a></li>
+                  </ul>
+              </div>
+            </li>
+            <li>
+                <a class="text-decoration-none text-black" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                   Blog <i class="fa-solid fa-angle-right" style="color: #1BBC9B;"></i>
+                </a>
+                <div class="collapse ms-4" id="collapseExample5">
+                    <ul class="list-unstyled">
+                            <li class="mb-1"><a href="./blog.html" class="text-decoration-none" style="color: #1BBC9B;">Blog Page</a></li>
+                            <li class="mb-1"><a href="./blog2.html" class="text-decoration-none" style="color: #1BBC9B;">Blog 2</a></li>
+                            <li class="mb-1"><a href="./archive.html" class="text-decoration-none" style="color: #1BBC9B;">Archive</a></li>
+                            <li class="mb-1"><a href="./single-page.html" class="text-decoration-none" style="color: #1BBC9B;">Single Page</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="./contact-us.html" class="text-decoration-none text-black">Contact Us</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+      <!-- Offcanvas-2 -->
+    <div class="offcanvas offcanvas-start bg-color" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <div class="col-lg-6">
+          <img src="../images/logo.png" class="img-fluid" alt="" width="75%" />
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <h6 class="poppins text-color fw-bold">"Wanderlust: A never-ending journey to discover the world, one passport stamp at a time. 🌍✈️" </h6>
+        <ul>
+          <li>
+            <p class="fw-bold">"Traveling isn't just about visiting new places; it's about discovering parts of yourself you never knew existed. Each new destination brings a fresh perspective, a new adventure, and countless memories. The world is vast, and with every journey, I feel like I’m piecing together the most beautiful puzzle of life. Whether it's a hidden beach or a bustling city, there’s something magical about stepping out of your comfort zone and embracing the unknown."</p>
+          </li>
+          <li>
+            <p class="fw-bold">"There's a special kind of freedom that comes with traveling. It's the feeling of waking up in a new place, not knowing exactly what's ahead, but knowing that adventure is waiting. Traveling opens your eyes to new cultures, new people, and new ways of life. It's about taking risks, making memories, and leaving your heart in places you never imagined. Every trip, big or small, is a chapter in my book of life, and I can't wait to see what the next page holds."</p>
+          </li>
+        </ul>
+        <h6 class="poppins text-color fw-bold">"Collecting memories, not things. 🌎📸"</h6>
+        <ul>
+          <li>
+            <p class="fw-bold">"The beauty of travel is in the unexpected moments—the ones you didn’t plan for, but that become the most memorable. Whether it’s sharing a laugh with a stranger in a remote village or witnessing a sunrise from a mountaintop, it’s the experiences that shape you and remind you how big the world is and how small we are. Every journey reminds me that life is about the people you meet, the places you see, and the stories you get to tell."</p>
+          </li>
+          <li>
+            <p class="fw-bold">"Traveling is a never-ending love affair with the world. Each place I visit leaves a piece of my heart behind, and every new destination fills me with wonder. It's the thrill of seeing something new, the peace of slowing down to appreciate the simple beauty around me, and the excitement of discovering hidden gems. From the bustling streets of a city to the quiet solitude of nature, travel is my reminder that life is about living fully, embracing the unknown, and finding joy in every moment."</p>
+          </li>
+        </ul>
+        <h6 class="poppins text-color fw-bold">"The world is too big to stay in one place. 🌏" </h6>
+        <h6 class="poppins text-color fw-bold">"Finding beauty in every corner of the world. ✨"</h6>
+        <h6 class="poppins text-color fw-bold">"Life is short, and the world is wide. Let’s explore it all. 🌍"</h6>
+        <h6 class="poppins text-color fw-bold">"Passport in hand, wanderlust in my heart. 💼🌍"</h6><br><br><br>
+      </div>
+    </div>
+      <!-- header start -->
+      <header class="bg-color">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 d-flex align-items-center poppins">
+              <div class="col-lg-2 col-4">
+                <img src="../images/logo.png" class="img-fluid" alt="" width="75%" />
+              </div>
+              <nav class="col-lg-8 d-none d-lg-flex ">
+                <ul class="list-unstyled d-flex m-0 justify-content-evenly w-100">
+                  <li>
+                    <a href="../index.html" class="text-decoration-none text-black">Home</a>
+                  </li>
+                  <li class="position-relative travel-li"> 
+                    <a href="#" class="text-decoration-none text-black">Travel <i class="fa-solid fa-angle-down" style="color: #1bbc9b"></i></a>
+                    <div class="dropdown position-absolute poppins p-3">
+                      <ul class="dropdown-items list-unstyled">
+                        <li class="dropdown-link mb-3">
+                            <a class="text-decoration-none " href="./destination.html"> Destination</a>  
+                        </li>
+                        <li class="dropdown-link ">
+                          <a class="text-decoration-none" href="./typologies.html">Typologies</a>  
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="position-relative pages-li">
+                    <a href="#" class="text-decoration-none text-black">Pages
+                      <i class="fa-solid fa-angle-down" style="color: #1bbc9b"></i>
+                    </a>
+                    <div class="dropdown position-absolute  poppins p-3">
+                      <ul class="dropdown-items list-unstyled">
+                        <li class="dropdown-link mb-3">
+                            <a class="text-decoration-none " href="./archive.html">Archive</a>  
+                        </li>
+                        <li class="dropdown-link mb-3 ">
+                          <a class="text-decoration-none" href="./preview.html">Preview</a>  
+                        </li>
+                        <li class="dropdown-link mb-3 ">
+                          <a class="text-decoration-none" href="./aboutus.html">About</a>  
+                        </li>
+                        <li class="dropdown-link mb-3 ">
+                          <a class="text-decoration-none" href="./prices.html">Prices</a>  
+                        </li>
+                        <li class="dropdown-link mb-3 ">
+                          <a class="text-decoration-none" href="./services.html">Services
+                          </a>  
+                        </li>
+                        <li class="dropdown-link mb-3 ">
+                          <a class="text-decoration-none" href="./search.html">Search</a>  
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="position-relative shop-li">
+                    <a href="./shop.html" class="text-decoration-none text-black">Shop
+                      <i class="fa-solid fa-angle-down" style="color: #1bbc9b"></i>
+                    </a>
+                    <div class="dropdown position-absolute  poppins p-3">
+                      <ul class="dropdown-items list-unstyled">
+                        <li class="dropdown-link mb-3">
+                            <a class="text-decoration-none " href="./shop.html">Shop Page </a>  
+                        </li>
+                        <li class="dropdown-link ">
+                          <a class="text-decoration-none" href="./prices.html">Prices</a>  
+                        </li>
+                        
+                      </ul>
+                    </div>
+    
+                  </li>
+                  <li class="position-relative blog-li">
+                    <a href="./blog.html" class="text-decoration-none text-black blog-li">Blog
+                      <i class="fa-solid fa-angle-down" style="color: #1bbc9b"></i>
+                    </a>
+                    <div class="dropdown position-absolute  poppins p-3">
+                      <ul class="dropdown-items list-unstyled">
+                        <li class="dropdown-link mb-3">
+                            <a class="text-decoration-none " href="./blog.html">Blog page</a>  
+                        </li>
+                        <li class="dropdown-link mb-3 ">
+                          <a class="text-decoration-none" href="./blog2.html">Blog-2</a>  
+                        </li>
+                        <li class="dropdown-link mb-3">
+                          <a class="text-decoration-none" href="./single-page.html">Single</a>  
+                        </li>
+                        <li class="dropdown-link  ">
+                          <a class="text-decoration-none" href="./archive.html">Archive</a>  
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="./contact-us.html" class="text-decoration-none text-black">Contact Us</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="col-lg-2 col-8 d-flex justify-content-end align-items-center">
+                <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" class="d-lg-none d-md-block"><i class="fa-solid fa-bars fa-lg" style="color: #000000"></i></a>
+              <a  href="#offcanvasExample" data-bs-toggle="offcanvas" role="button" aria-controls="offcanvasExample" class="d-none d-lg-block"><i class="fa-solid fa-bars fa-lg" style="color: #000000"></i></a>
+                <a href="#" class="g-btn text-decoration-none ms-2" data-bs-toggle="modal" data-bs-target="#searchModal">Search</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- header end -->  
+    <main>
+        <!-- banner-start -->
+        <section class="service-banner-section"></section>
+        <!-- banner-end -->
+        <section class="py-90">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <p class="text-success" style="font-size: 30px; font-family:Reenie Beanie, cursive ;">Tourist
+                            Hotspots</p>
+                        <p style="font-size: 50px;" class="fw-bold poppins">Trip Planning for the
+                            Best Travel Experience
+                            Possible</p>
+                        <p class="poppins text-secondary">Welcome to our travel agency, where we specialize in providing
+                            our clients
+                            with unforgettable travel experiences.Whether you're looking to relax on a
+                            tropical beach or embark on a cultural adventure, we can help you plan your
+                            dream vacation. From flights and accommodations to tours and activities,
+                            we'll handle all the details, so you can focus on making memories.</p>
+                        <div class="col-12 d-flex">
+                            <div class="col-1 text-success ">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div class="col-11">
+                                <p>We offer a wide r ange of travel tours to destinations all over the world</p>
+                            </div>
+                        </div>
+                        <div class="col-12 d-flex">
+                            <div class="col-1 text-success ">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div class="col-11">
+                                <p>Our travel agents are available to assist you every step of the way</p>
+                            </div>
+                        </div>
+                        <button type="button" class="g-btn">Read More</button>
+                    </div>
+                    <div class="col-lg-6 col-12 mt-3">
+                        <div class="col-xl-12 d-flex justify-content-between flex-wrap">
+                            <div class="col-xl-4 col-6 p-2 d-flex justify-content-center about-img-section">
+                                <img src="../images/service-2.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-xl-4 col-6 p-2 d-flex justify-content-center about-img-section">
+                                <img src="../images/service-3.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-xl-4 col-6 p-2 d-flex justify-content-center about-img-section d-none d-xl-block">
+                                <img src="../images/service-4.png" alt="" class="img-fluid">
+                            </div>
+
+                        </div>
+                        <div class="col-12 mt-3">
+                            <div class="about-img-section  d-flex justify-content-center">
+                                <img src="../images/service-5.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pb-90 ">
+            <div class="container">
+                <div class="row">
+                    <p class="text-center text-success" style="font-family: Reenie Beanie, cursive ; font-size: 30px;">
+                        Let us help you plan your next adventure</p>
+                </div>
+                <div class="row col-12 mt-5 ">
+                    <div class="col-lg-4 col-12">
+                        <div class="d-flex justify-content-center"><img src="../images/servise-6.png" alt="">
+                        </div>
+                        <p style="font-size: 20px;" class="fw-bold text-center">Airline Tickets</p>
+                        <p class="text-secondary text-center">Our travel agency specializes in providing
+                            our customers with the best deals on airline
+                            tickets.</p>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="d-flex justify-content-center"><img src="../images/servise-7.png" alt="">
+                        </div>
+                        <p style="font-size: 20px;" class="fw-bold text-center">Ocean Cruises</p>
+                        <p class="text-secondary text-center">Luxurious and comfortable way of travel, and
+                            passengers can enjoy stunning views of the
+                            sea.</p>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="d-flex justify-content-center"><img src="../images/servise-8.png" alt="">
+                        </div>
+                        <p style="font-size: 20px;" class="fw-bold text-center">Means of Transport</p>
+                        <p class="text-secondary text-center">Our travel agency offers a variety of means
+                            of transport to get you around your
+                            destination safely.</p>
+                    </div>
+                    <div class="col-lg-4 col-12 mt-5">
+                        <div class="d-flex justify-content-center"><img src="../images/servise-9.png" alt="">
+                        </div>
+                        <p style="font-size: 20px;" class="fw-bold text-center">Travel itineraries</p>
+                        <p class="text-secondary text-center">Our team of experts will take care of all the
+                            planning and logistics, providing you with a
+                            detailed itinerary.</p>
+                    </div>
+                    <div class="col-lg-4 col-12 mt-5">
+                        <div class="d-flex justify-content-center"><img src="../images/servise-10.png" alt="">
+                        </div>
+                        <p style="font-size: 20px;" class="fw-bold text-center">Travel Insurance</p>
+                        <p class="text-secondary text-center">Travel insurance is an essential part of
+                            any trip, providing peace of mind and
+                            protection.</p>
+                    </div>
+                    <div class="col-lg-4 col-12 mt-5">
+                        <div class="d-flex justify-content-center"><img src="../images/servise-11.png" alt="">
+                        </div>
+                        <p style="font-size: 20px;" class="fw-bold text-center">Local Guide</p>
+                        <p class="text-secondary text-center">We can connect you with guides who will
+                            take you off the best path and show you
+                            their city.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="service-2-banner-section position-relative py-90">
+                <div class="overlay position-absolute w-100 h-100 top-0 d-flex align-items-center" >
+                    <div class="container ">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-12 poppins fw-bold fs-1 d-flex flex-column justify-content-center text-light "> 
+                                <p style="font-size: 60px;" class="text-center"> Let us Help you Plan your <br> Next 
+                                    Getaway Now </p> 
+                                <p style="font-size: 19px;" class="text-center poppins"> Contact our agency and we will 
+                                    get you a quote in a very short time. Discover the world with <br> us! Book your 
+                                    next unforgettable adventure today. </p> 
+                                <div class="d-flex justify-content-center mt-2"> 
+                                    <button type="button" class="g-btn fs-5">CONTACT US</button> 
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+        </section>
+        <section class="py-90">
+            <div class="container">
+                <div class="row col-12">
+                    <div class="col-lg-6 col-12 d-flex">
+                        <div class="col-6 d-flex align-items-center">
+                            <div class="col-12 border  px-5 py-3 ">
+                                <p class="fw-bold text-center" style="font-size: 40px;">165</p>
+                                <p class="text-center">Attractions with specialized
+                                    and competent local guide</p>
+                            </div>
+                        </div>
+                        <div class="col-6 mx-3 ">
+                            <div class="col-12 border px-5 py-3">
+                                <p class="fw-bold text-center" style="font-size: 40px;">330</p>
+                                <p class="text-center">Days in which you can
+                                    travel the world</p>
+                            </div>
+                            <div class="col-12 border mt-3 px-5 py-3">
+                                <p class="fw-bold text-center" style="font-size: 40px;">124</p>
+                                <p class="text-center">Information and assistance
+                                    points in the countries</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-12"></div>
+                    <div class="col-lg-5 col-12 ">
+                        <p style="font-size: 30px; font-family: Reenie Beanie, cursive ;" class="text-success ">Always
+                            by your side</p>
+                        <p style="font-size: 50px;" class="poppins fw-bold">
+                            Our Numbers in the
+                            World
+                        </p>
+                        <p>Our team of experienced travel experts can provide you with personalized
+                            recommendations and advice to create a trip that suits your preferences and
+                            budget. Various destinations around the world. With our knowledge and
+                            expertise in the travel industry, we ensure that all aspects of your trip.</p>
+                        <div>
+                            <button type="button" class="gry-btn rounded-2 px-4 py-2">READ MORE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pb-90">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                        <p style="font-size: 30px; font-family: Reenie Beanie, cursive ;" class="text-success ">
+                            Personalized Trips</p>
+
+                    </div>
+                    <div class="col-12 d-flex justify-content-center">
+                        <p style="font-size: 35px;" class="poppins fw-bold">
+                            Contact us for a Quote
+                        </p>
+                    </div>
+                    <div class="col-lg-12 d-flex flex-wrap">
+                        <div class="col-lg-6 col-12 p-0  ">
+                          <div class="frame">
+                            <img src="../images/servise-13.png" alt="" class="img-fluid w-100 h-100">
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-12 px-5 py-5 d-flex flex-column justify-content-center"
+                            style="background-color: #F2F2F2;">
+                            <p style="font-size: 25px; " class="poppins fw-bold text-center">Plan your Next Trip</p>
+                            <p class="poppins  text-center text-secondary">Write to us for personalized travel advice or
+                                for information
+                                on group travel and last minute travel, all travel is insured
+                                and safe.</p>
+                            <div class="mb-3">
+
+                                <input type="text" class="form-control px-3 py-3" id="formGroupExampleInput"
+                                    placeholder="Type your name">
+                            </div>
+                            <div class="mb-3">
+
+                                <input type="text" class="form-control py-3 px-3" id="formGroupExampleInput2"
+                                    placeholder="Insert your email">
+                            </div>
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                    style="height: 100px"></textarea>
+                                <label for="floatingTextarea2"></label>
+                            </div>
+                            <div class="mt-2 col-12">
+                                <button type="button" class="g-btn col-12">Submit</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 px-0 d-none d-lg-block">
+                            <div class="last-section d-flex align-items-center justify-content-between  rounded-bottom">
+                              <div class="col-lg-2"><img src="../images/servise-15.png" class="img-fluid " alt=""></div>
+                              <div class="col-lg-2"><img src="../images/servise-16.png" class="img-fluid " alt=""></div>
+                              <div class="col-lg-2"><img src="../images/servise-17.png" class="img-fluid " alt=""></div>
+                              <div class="col-lg-2"><img src="../images/servise-18.png" class="img-fluid " alt=""></div>
+                              <div class="col-lg-2"><img src="../images/servise-19.png" class="img-fluid " alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer start -->
+    <footer class="footer-img overlay d-flex align-items-center py-90">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 d-flex flex-wrap">
+                    <div class="col-lg-6 col-12 ">
+                        <h2 class="h1 fw-bold text-white">
+                            Travel beyond your <br />
+                            imagination, with our <br />
+                            Travel Agency!
+                        </h2>
+                    </div>
+                    <div class="col-lg-6 d-flex col-12 mt-lg-0 mt-5">
+                        <div class="col-6">
+                            <h5 class="text-white">Address</h5>
+                            <ul class="list-unstyled">
+                                <li class="text-decoration-none text-white fw-lighter">
+                                    1080 Brickell Ave
+                                </li>
+                                <li class="text-decoration-none text-white fw-lighter mt-2">
+                                    Miami - Florida
+                                </li>
+                                <li class="text-decoration-none text-white fw-lighter mt-2">
+                                    U.S. of America
+                                </li>
+                                <ul class="list-unstyled d-flex mt-2">
+                                    <li class="text-decoration-none">
+                                        <i class="fa-brands fa-facebook" style="color: #ffffff"></i>
+                                    </li>
+                                    <li class="text-decoration-none ms-2">
+                                        <i class="fa-brands fa-twitter" style="color: #ffffff"></i>
+                                    </li>
+                                    <li class="text-decoration-none ms-2">
+                                        <i class="fa-brands fa-youtube" style="color: #ffffff"></i>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <h5 class="text-white pb-3">Contact</h5>
+                            <a href="#" class="g-btn text-decoration-none text-white">info@travel.com</a>
+                            <h5 class="text-white mt-4">+ 01 483 593 284</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const results = document.getElementById('results');
+    
+        searchInput.addEventListener('input', function () {
+          const filter = this.value.toLowerCase();
+          const links = results.querySelectorAll('a');
+    
+          links.forEach(link => {
+            const text = link.textContent.toLowerCase();
+            link.style.display = text.includes(filter) ? 'block' : 'none';
+          });
+        });
+     </script>
+</body>
